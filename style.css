@@ -1,0 +1,93 @@
+html {
+	font-size: 10px;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #404752;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	background-color: #D0D0D0;
+	width: 36rem;
+	/*height: 50rem;*/
+	padding: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	flex: 0 0 auto;
+	gap: .5rem;
+}
+
+/*screen window here-------------------------------------*/
+.screenContainer {
+	background-color: #afc2db;
+	border: 1px solid black;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column;
+	max-width: 100%;
+}
+.topScreen {
+	border: 1px solid black;
+	border-bottom: none;
+	min-width: 7em;
+	height: 3em;
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	overflow: hidden;
+}
+.topText {
+	font-size: 2em;
+}
+.bottomScreen {
+	border: 1px solid black;
+	border-top: none;
+	min-width: 7em;
+	height: 6em;
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	overflow: hidden;
+}
+.bottomText {
+	font-size: 4em;
+}
+p {
+	font-weight: bold;
+}
+
+/*buttons here-------------------------------------*/
+.btnContainer{
+	background-color: #afc2db;
+	border: 1px solid black;
+	flex: 3 1 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: space-evenly;
+	gap: .2em;
+}
+.btn {
+	border: 1px solid black;
+	width: 7em;
+	height: 7em;
+	flex: 1 1 auto;
+	display: flex;
+}
+button {
+	flex: 1 1 auto;
+	font-size: 2.5em;
+	font-weight: bold;
+}
